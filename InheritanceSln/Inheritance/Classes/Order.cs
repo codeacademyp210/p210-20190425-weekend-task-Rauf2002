@@ -17,5 +17,11 @@ namespace Inheritance.Classes
             price = p1.Price;
             return quantity * price;
         }
+        public static int Id { get; set; }
+        public int GetId(int paramId)
+        {
+            paramId = Id;
+            return Id++;
+        }
     }
 }

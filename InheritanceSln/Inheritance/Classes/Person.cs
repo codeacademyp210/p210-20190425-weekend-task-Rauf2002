@@ -13,5 +13,13 @@ namespace Inheritance.Classes
 
         public int Card_Id { get; set; }
 
+        public static int Id { get; set; }
+        public int GetId(int paramId)
+        {
+            paramId = Id;
+            return Id++;
+        }
     }
+
 }
+

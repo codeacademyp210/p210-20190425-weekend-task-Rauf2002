@@ -31,7 +31,7 @@ namespace Inheritance
                 e1.Position = Console.ReadLine();
                 Console.WriteLine("Maasiniz : ");
                 e1.Salary = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Isci yaradildi - {0} {1}", e1.Name, e1.Surname);
+                Console.WriteLine("{0} - Isci yaradildi - {1} {2}",Employee.Id, e1.Name, e1.Surname);
                 Console.ReadLine();
 
             }
@@ -51,7 +51,7 @@ namespace Inheritance
                 c1.Address = Console.ReadLine();
                 Console.WriteLine("Telefon nomreniz :");
                 c1.Phone = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Musteri yaradildi - {0} {1}", c1.Name, c1.Surname);
+                Console.WriteLine("{0} - Musteri yaradildi - {1} {2}",Client.Id, c1.Name, c1.Surname);
                 Console.ReadLine();
 
             }
@@ -65,7 +65,7 @@ namespace Inheritance
                 p1.Price = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Rengi");
                 p1.Color = Console.ReadLine();
-                Console.WriteLine("Mehsul yaradildi : {0} {1} {2}$",p1.Name,p1.Color,p1.Price);
+                Console.WriteLine("{0} - Mehsul yaradildi : {1} {2} {3}$",Product.Id,p1.Name,p1.Color,p1.Price);
                 Console.ReadLine();
             }
             if(option == "o" || option == "O")
@@ -74,7 +74,7 @@ namespace Inheritance
                 Console.WriteLine("Sifaris yaratmaq ucun suallari cavablandirin :");
                 Console.WriteLine("Sayi :");
                 o1.Count = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Sayi:{0}. Umumi odenecek mebleg :{1} ",o1.Count,o1.TotalPrice(o1.Count,20));
+                Console.WriteLine("{0} - Sayi:{1}. Umumi odenecek mebleg :{2} ",Order.Id,o1.Count,o1.TotalPrice(o1.Count,20));
                 Console.ReadLine();
             }
         }
