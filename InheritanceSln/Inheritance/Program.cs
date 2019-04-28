@@ -25,13 +25,15 @@ namespace Inheritance
                 e1.Name = Console.ReadLine();
                 Console.WriteLine("Soyadiniz :");
                 e1.Surname = Console.ReadLine();
+                Console.WriteLine("Ad gununuz");
+                e1.Date = Convert.ToDateTime(Console.ReadLine());
                 Console.WriteLine("Kart ID-iz :");
                 e1.Card_Id = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Vezifeniz :");
                 e1.Position = Console.ReadLine();
                 Console.WriteLine("Maasiniz : ");
                 e1.Salary = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("{0} - Isci yaradildi - {1} {2}",Employee.Id, e1.Name, e1.Surname);
+                Console.WriteLine("{0} - Isci yaradildi - {1} {2} {3} yas",Employee.Id, e1.Name, e1.Surname,Employee.CalculateAge(e1.Date));
                 Console.ReadLine();
 
             }

@@ -10,9 +10,5 @@ namespace Inheritance.Classes
     {
         public string Position { get; set; }
         public int Salary { get; set; }
-    
-
-        //public DateTime birthDay = Convert.ToDateTime(Console.ReadLine());
-
     }
 }

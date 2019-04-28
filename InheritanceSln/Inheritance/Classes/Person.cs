@@ -19,6 +19,18 @@ namespace Inheritance.Classes
             paramId = Id;
             return Id++;
         }
+        public DateTime Date { get; set; }
+        public static int CalculateAge(DateTime Date)
+        {
+            int age = 0;
+            age = DateTime.Now.Year - Date.Year;
+            if (DateTime.Now.DayOfYear < Date.DayOfYear)
+                age -= 1;
+
+            return age;
+        }
+
+
     }
 
 }
